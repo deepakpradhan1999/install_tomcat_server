@@ -31,3 +31,5 @@ echo "Creating a backup of tomcat users file"
 sudo mv /etc/tomcat9/tomcat-users.xml /etc/tomcat9/tomcat-users-original.xml
 sudo cp -rp tomcat-users.xml /etc/tomcat9/tomcat-users.xml
 sudo systemctl restart tomcat9
+pget "https://tomcat.apache.org/tomcat-7.0-doc/appdev/sample/sample.war"
+cp -rp sample.war /var/lib/tomcat9/webapps/
